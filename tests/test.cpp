@@ -4,17 +4,17 @@
 #include "Shape.h"
 #include "OpenGLDrawStrategy.h"
 
-TEST(ShapeTest, CircleArea) {
+TEST(Shape-Test, Circle-Area) {
     Circle circle(2.0);
     EXPECT_DOUBLE_EQ(circle.area(), 12.5663706144);
 }
 
-TEST(ShapeTest, SquareArea) {
+TEST(Shape-Test, Square-Area) {
     Square square(3.0);
     EXPECT_DOUBLE_EQ(square.area(), 9.0);
 }
 
-TEST(ShapeTest, SquareArea) {
+TEST(Shape-Test, Square-Area) {
     Square square(4.0);
     EXPECT_DOUBLE_EQ(square.area(), 11.9);
 }
