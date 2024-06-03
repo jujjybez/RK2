@@ -10,7 +10,7 @@ option(BUILD_TESTS "Build tests" OFF)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
-add_library(main STATIC ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp)
+add_library(main STATIC /main.cpp)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(main gcov)
 
