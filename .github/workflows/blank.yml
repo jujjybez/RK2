@@ -12,6 +12,12 @@ jobs:
         run: |
           cmake -H. -B_build -DBUILD_MAIN=ON
           cmake --build _build
+      - name Config tests
+        run: cmake -H. -B ${{github.workspace}}/build -DBUILD_TESTS=ON
+      - name: Build tests
+        run: cmake --build ${{github.workspace}}/build
+      - name: Run tests
+        run: cmake --build ${{github.workspace}}/build --target test -- ARGS=--verbose
       - name: Test if main.cpp actually present
         run: ./_build/main_test
       - name: Make artifact from compiled main
