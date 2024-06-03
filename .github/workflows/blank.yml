@@ -12,7 +12,7 @@ jobs:
         run: |
           cmake -H. -B_build -DBUILD_MAIN=ON
           cmake --build _build
-      - name Config tests
+      - name: Config tests
         run: cmake -H. -B ${{github.workspace}}/build -DBUILD_TESTS=ON
       - name: Build tests
         run: cmake --build ${{github.workspace}}/build
