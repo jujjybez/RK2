@@ -14,7 +14,7 @@ target_link_libraries(main gcov)
 
 if (BUILD_MAIN)
     add_executable(main_test ${CMAKE_CURRENT_SOURCE_DIR}/Main.cpp)
-    install(TARGETS main RUNTIME DESTINATION bin)
+    install(TARGETS main_test RUNTIME DESTINATION bin)
 endif()
 
 if (BUILD_TESTS)
