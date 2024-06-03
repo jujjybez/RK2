@@ -11,7 +11,7 @@ TEST(Shape_Test1, Circle_Area1) {
 
 TEST(Shape_Test2, Square_Area2) {
     Square square(3.0);
-    EXPECT_DOUBLE_EQ(square.side(), 9.0);
+    EXPECT_DOUBLE_EQ(square.side(), 3.0);
 }
 
 TEST(Shape_Test3, Square_Area3) {
