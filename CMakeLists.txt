@@ -13,7 +13,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(main gcov)
 
 if (BUILD_MAIN)
-    add_executable(main_test ${CMAKE_CURRENT_SOURCE_DIR}Main.cpp)
+    add_executable(main_test ${CMAKE_CURRENT_SOURCE_DIR}/Main.cpp)
     install(TARGETS main RUNTIME DESTINATION bin)
 endif()
 
