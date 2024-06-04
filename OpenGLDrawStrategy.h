@@ -13,12 +13,12 @@ class OpenGLDrawStrategy
 
    void operator()( Circle const& circle ) const
    {
-      std::cout << "Draw circle";
+      cout << "Draw circle" << endl;
       // ... Implementing the logic for drawing a circle by means of OpenGL
    }
    void operator()( Square const& square ) const
    {
-      std::cout << "Draw square";
+      cout << "Draw square" << endl;
       // ... Implementing the logic for drawing a square by means of OpenGL
    }
 
