@@ -8,13 +8,9 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: recursive
-      - name: Build main.cpp
-        run: |
-          cmake -H. -B_build -DBUILD_MAIN=ON
-          cmake --build _build
-      - name: Config tests
-        run: cmake -H. -B _build -DBUILD_TESTS=ON
-      - name: Build tests
+      - name: Config main.cpp and tests
+        run: cmake -H. -B_build
+      - name: Build main.cpp and tests
         run: cmake --build _build
       - name: Run tests
         run: cmake --build _build --target test -- ARGS=--verbose
