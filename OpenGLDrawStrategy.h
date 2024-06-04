@@ -1,6 +1,8 @@
 #ifndef OPENGL_DRAW_STRATEGY_H
 #define OPENGL_DRAW_STRATEGY_H
 
+#include <iostream>
+
 #include "Circle.h"
 #include "Square.h"
 //#include /* OpenGL graphics library headers */
@@ -13,12 +15,12 @@ class OpenGLDrawStrategy
 
    void operator()( Circle const& circle ) const
    {
-      cout << "Draw circle" << endl;
+      std::cout << "Draw circle" << std::endl;
       // ... Implementing the logic for drawing a circle by means of OpenGL
    }
    void operator()( Square const& square ) const
    {
-      cout << "Draw square" << endl;
+      std::cout << "Draw square" << std::endl;
       // ... Implementing the logic for drawing a square by means of OpenGL
    }
 
